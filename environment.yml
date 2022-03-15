@@ -1,0 +1,11 @@
+# run: conda env create --file environment.yml
+name: pytorch-dlcv
+dependencies:
+- python>=3.8
+- anaconda
+- pip
+- torchvision  # pin version for conda
+- pip:
+  # works for regular pip packages
+  - torch
+  - matplotlib
